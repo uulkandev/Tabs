@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: darkseagreen;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: .4s;
+}
+.tabs-lable{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rose img{
+    width: 225px;
+}
+.rose input{
+    display: none;
+}
+.rose label{
+    font-size: 40px;
+    color: darkmagenta;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+#RED:checked ~ .pink,
+#RED:checked ~ .white {
+    opacity: 0.3;
+    rotate: 45deg;
+    transition: .5s;
+    width: 150px;
+}
+
+#PINK:checked ~ .white,
+#PINK:checked ~ .red {
+    opacity: 0.3;
+    rotate: 45deg;
+    transition: .5s;
+    width: 150px;
+}
+
+#WHITE:checked ~ .red,
+#WHITE:checked ~ .pink{
+    opacity: 0.3;
+    rotate: 45deg;
+    transition: .5s;
+    width: 150px;
+}
+
+#All:checked ~ .pink,
+#All:checked ~ .red,
+#All:checked ~ .white{
+    transition: .5s;
+}
